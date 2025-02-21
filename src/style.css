@@ -92,14 +92,14 @@ body {
 
 .card {
   background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 16px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), inset 2px 2px 5px rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  font-size: 1rem;
 }
 
 .card:hover, .card:focus {
