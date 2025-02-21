@@ -1,44 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Vite + TS</title>
-  </head>
-  <body>
-    <div class="header">
-      <h1>iCloud Invites</h1>
-      <p>Customize Your Invitation</p>
-      <div class="buttons">
-        <button class="button">Home</button>
-        <button class="button">Preview</button>
-      </div>
-    </div>
-    <div class="background-blur"></div>
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="card">
-        <div id="app"></div>
-      </div>
-      <div class="card">
-        <h2>Station 1</h2>
-        <p>Date and Time</p>
-        <p>Address</p>
-      </div>
-      <div class="card">
-        <h2>Station 2</h2>
-        <p>Tell guests about your event...</p>
-      </div>
-      <div class="card">
-        <h2>Station 3</h2>
-        <p>Create a shared album</p>
-      </div>
-      <div class="card">
-        <h2>Station 4</h2>
-        <p>Add an Apple Music playlist</p>
-      </div>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+</head>
+<body>
+<header class="header">
+    <h1>Lorem ipsum</h1>
+    <p>Customize Your Invitation</p>
+    <nav aria-label="Navigation buttons" class="buttons">
+        <button aria-label="Go to Home" class="button">Home</button>
+        <button aria-label="Preview invitation" class="button">Preview</button>
+    </nav>
+</header>
+<main class="container">
+    <section aria-labelledby="event-title" class="main-card">
+        <h2 id="event-title">Choose an Image</h2>
+        <p>Event Name</p>
+        <p>📅 Date and Time</p>
+        <p>📍 Address</p>
+    </section>
+    <aside class="card-group">
+        <article aria-labelledby="host-note" class="card">
+            <h2 id="host-note">Design 3</h2>
+            <p>Host Note</p>
+            <p>Tell guests about your event...</p>
+        </article>
+        <article aria-labelledby="photos-section" class="card">
+            <h2 id="photos-section">Photos</h2>
+            <p>Shared Album</p>
+            <button aria-label="Create a shared album" class="button">Create Album</button>
+        </article>
+        <article aria-labelledby="music-section" class="card">
+            <h2 id="music-section">Music</h2>
+            <p>Playlist</p>
+            <button aria-label="Add an Apple Music Playlist" class="button">Add Playlist</button>
+        </article>
+        <article class="card">
+            <div id="app"></div>
+        </article>
+    </aside>
+</main>
+
+<script src="/src/main.ts" type="module"></script>
+</body>
 </html>

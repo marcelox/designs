@@ -9,7 +9,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </a>
     <h1>Designs</h1>
     <div>
-      <button id="counter" type="button"></button>
+      <button class="button" id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
       Some experiments
