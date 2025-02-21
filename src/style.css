@@ -3,77 +3,40 @@ body {
   padding: 0;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background: linear-gradient(135deg, #6e1a52, #8b1e94, #bf324a);
   background-size: 200% 200%;
   animation: gradientAnimation 8s ease infinite;
-  position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: white;
 }
 
-/* Gradient Animation for Smooth Shifting Effect */
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Adding a blur overlay effect */
-.background-blur {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
-}
-
-/* Card container layout */
-.container {
-  position: relative;
-  z-index: 2;
-  width: 80%;
-  max-width: 900px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.large-card {
-  grid-column: span 2;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 16px;
-  padding: 40px;
+.header {
   text-align: center;
-  color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 16px;
   padding: 20px;
-  text-align: center;
-  color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.card:hover, .large-card:hover {
-  transform: translateY(-5px);
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.card h2, .large-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.header p {
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .button {
@@ -83,9 +46,47 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
+  font-weight: bold;
 }
 
 .button:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.main-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(30px);
+}
+
+.card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), inset 2px 2px 5px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
