@@ -6,9 +6,11 @@
     <title>Vite + TS</title>
 </head>
 <body>
+
 <header class="header">
     <div class="logo">
-        <span>Parkour</span>Stations
+        <span>PARKOUR</span>
+        <span>STATIONS</span>
     </div>
     <div class="nav-buttons">
         <button>⌚</button>
@@ -19,7 +21,7 @@
 
 <main class="main-content">
     <nav class="navigation">
-        <a href="#" class="home-button">Home</a>
+        <button class="home-button">Home</button>
         <button class="preview-button">Preview</button>
     </nav>
 
@@ -32,48 +34,49 @@
                 <button class="image-button">☁️</button>
             </div>
             <div class="event-details">
-                <h2 class="event-name">Event Name</h2>
+                <h2 class="event-name">EVENT NAME</h2>
                 <button class="detail-button">📅 Date and Time</button>
                 <button class="detail-button">📍 Address</button>
             </div>
         </div>
 
-        <div class="feature-card">
+        <div class="feature-card pink-header">
             <div class="host-info">
-                <div class="host-avatar">M</div>
+                <div class="host-avatar">T1</div>
                 <div>
-                    <div>Team 1</div>
-                    <div style="opacity: 0.7; font-size: 0.9rem;">Host Note</div>
+                    <h3 class="feature-title">Team 1</h3>
+                    <div class="feature-subtitle">Host Note</div>
                 </div>
             </div>
             <div class="feature-content">
-                <p style="opacity: 0.7;">Tell guests about your event...</p>
+                <p class="feature-description">Tell guests about your event...</p>
             </div>
         </div>
 
         <div class="feature-card">
             <div class="host-info">
-                <div style="width: 30px; height: 30px;">📸</div>
+                <div class="host-avatar">TS</div>
                 <div>
-                    <div>Photos</div>
-                    <div style="opacity: 0.7; font-size: 0.9rem;">Shared Album</div>
+                    <h3 class="feature-title">Designs</h3>
+                    <div class="feature-subtitle">Some experiments</div>
                 </div>
             </div>
             <div class="feature-content">
-                <div id="app"></div>
+                <p class="feature-description">Create a photo album for this event and share it with participants.</p>
             </div>
+            <div class="feature-tag">Round 0</div>
         </div>
 
         <div class="feature-card">
             <div class="host-info">
-                <div style="width: 30px; height: 30px;">🎵</div>
+                <div class="feature-icon">🎵</div>
                 <div>
-                    <div>Music</div>
-                    <div style="opacity: 0.7; font-size: 0.9rem;">Playlist</div>
+                    <h3 class="feature-title">Music</h3>
+                    <div class="feature-subtitle">Playlist</div>
                 </div>
             </div>
             <div class="feature-content">
-                <p style="opacity: 0.7;">Add a Playlist so guests can listen to and add songs.</p>
+                <p class="feature-description">Add a Playlist so guests can listen to and add songs.</p>
             </div>
             <button class="feature-button">Add Playlist</button>
         </div>
