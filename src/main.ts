@@ -7,13 +7,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
+    <br>
     <h1>Designs</h1>
     <div>
-      <button class="button" id="counter" type="button"></button>
-    </div>
     <p class="read-the-docs">
       Some experiments
     </p>
+      <button class="feature-button" id="counter" type="button"></button>
+    </div>
   </div>
 `
 
